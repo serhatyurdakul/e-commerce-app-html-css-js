@@ -1,0 +1,159 @@
+/*! Base Start */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*! Base End */
+/*! header start */
+header {
+  border-bottom: 1px solid #dee0ea;
+}
+.global-notification {
+  background-color: #1367ef;
+  color: white;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 12px;
+}
+.global-notification a {
+  color: white;
+  font-weight: 600;
+}
+
+.header-row {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left .logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.header-center .navigation .menu-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.header-center .menu-list .menu-list-item {
+  display: flex;
+  position: relative;
+}
+
+.header-center .menu-list .menu-link {
+  font-size: 14px;
+
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  position: relative;
+}
+.header-center .menu-list .menu-link::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: #1367ef;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.2s ease width;
+}
+
+.header-center .menu-list .menu-list-item:hover .menu-link::after {
+  width: 100%;
+}
+
+.header-center .menu-list .menu-link.active::after {
+  width: 100%;
+}
+
+.header-center .menu-list i {
+  font-size: 12px;
+}
+
+.header-right .header-right-links {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.header-right i {
+  font-size: 18px;
+}
+
+.header-right .bi-person {
+  font-size: 23px;
+}
+.header-right .toggle-button {
+  border: none;
+  background-color: transparent;
+}
+.header-right .header-cart {
+  position: relative;
+}
+.header-right .header-cart-link .header-cart-count {
+  width: 16px;
+  height: 16px;
+  background-color: #1367ef;
+  color: white;
+  border-radius: 100%;
+  font-size: 10px;
+  font-weight: 500;
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*? menu dropdown start */
+header .menu-dropdown-wrapper {
+  position: absolute;
+}
+header .menu-dropdown-content {
+  width: 220px;
+}
+/*? menu dropdown end */
+
+/*! header end */
