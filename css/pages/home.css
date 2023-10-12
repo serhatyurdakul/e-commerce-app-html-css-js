@@ -18,3 +18,16 @@
   flex-wrap: wrap;
 }
 /*! categories end */
+
+/*! product strat  */
+.products {
+  margin-bottom: 40px;
+}
+
+.products .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*! product end  */

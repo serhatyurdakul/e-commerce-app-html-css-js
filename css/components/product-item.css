@@ -1,0 +1,127 @@
+.products .product-item {
+  position: relative;
+  text-align: center;
+  background-color: #efefef;
+  flex: 1;
+  /*   display: flex;
+  flex-direction: column; */
+}
+
+/* .products .product-item .product-image {
+  display: flex;
+} */
+
+.products .product-item img {
+  width: 100%;
+  transition: 0.3s ease-in-out all;
+}
+
+
+.products .product-item .img2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.products .product-item .img1:hover {
+  visibility: hidden;
+  opacity: 0;
+}
+.products .product-item .product-image:hover .img2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.product-item .product-title {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.product-item .product-star {
+  display: flex;
+  justify-content: center;
+  column-gap: 2px;
+}
+.product-item .product-star i {
+  font-size: 12px;
+  color: gold;
+}
+.product-item .product-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  padding-bottom: 15px;
+}
+.product-item .product-prices .new-price {
+  color: #ff3c20;
+  font-weight: 500;
+}
+.product-item .product-prices .old-price {
+  color: #7d7d7d;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.product-item .product-discount {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3c20;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 100%;
+}
+
+.product-item .product-links {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 10px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-out all;
+}
+
+.product-item:hover .product-links {
+  transform: translate(15px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-item .product-links a,
+.product-item .product-links button {
+  background-color: black;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.product-item .product-links a:hover,
+.product-item .product-links button:hover {
+  background-color: black;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.product-item .product-links i {
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+}
