@@ -36,7 +36,23 @@
 .campaigns .campaigns-wrapper {
   display: flex;
   gap: 30px;
-  margin-top: 30px;
+  margin: 30px;
   flex-wrap: wrap;
 }
 /*! campaigns end */
+
+/*! blogs start */
+
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .blogs .blog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*! blogs end */
