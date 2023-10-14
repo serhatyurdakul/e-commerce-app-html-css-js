@@ -49,10 +49,26 @@
   gap: 30px;
 }
 
+/*! blogs end */
+
+/*! responsive  */
+
 @media (max-width: 768px) {
   .blogs .blog-list {
     grid-template-columns: 1fr;
   }
+  .policy .policy-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .campaigns .campaign-item {
+    width: 100%;
+    flex: unset !important;
+  }
+  .slider-item {
+    height: calc(100vh - 155px);
+  }
+  .slider-buttons {
+    display: none;
+  }
 }
-
-/*! blogs end */

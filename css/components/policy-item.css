@@ -1,0 +1,35 @@
+.policy {
+  border: 1px solid #dee0ea;
+  margin-top: 40px;
+}
+
+.policy .policy-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+  flex-wrap: wrap;
+}
+
+.policy .policy-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.policy .policy-item i {
+  font-size: 50px;
+  display: flex;
+}
+
+.policy-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy .policy-texts strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+.policy .policy-item span {
+  font-size: 12px;
+}
+

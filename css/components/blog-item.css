@@ -43,10 +43,3 @@
 .blog-item .blog-info-bottom a:hover {
   color: #1367ef;
 }
-
-@media (max-width: 768px) {
-    .blogs .blog-list {
-      grid-template-columns: 1fr;
-    }
-  }
-  

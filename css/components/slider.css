@@ -92,12 +92,3 @@
   background-color: #1367ef;
   border-radius: 100%;
 }
-
-@media (max-width: 768px) {
-  .slider-item {
-    height: calc(100vh - 155px);
-  }
-  .slider-buttons {
-    display: none;
-  }
-}
