@@ -132,6 +132,7 @@ header .menu-dropdown-wrapper {
   visibility: hidden;
   opacity: 0;
   transition: 0.2s ease all;
+  z-index: 1;
 }
 
 header .menu-dropdown-content {
