@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <title>Account</title>
+    <title>E-Commerce App</title>
   </head>
 
   <body>
@@ -34,7 +34,7 @@
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
-                    <a href="./index.html" class="menu-link"
+                    <a href="./index.html" class="menu-link active"
                       >Home <i class="bi bi-chevron-down"></i
                     ></a>
                     <div class="menu-dropdown-wrapper">
@@ -130,7 +130,7 @@
 
             <div class="header-right">
               <div class="header-right-links">
-                <a href="#" class="header-account">
+                <a href="./account.html" class="header-account">
                   <i class="bi bi-person"></i>
                 </a>
                 <button class="toggle-button">
@@ -200,74 +200,26 @@
     </div>
     <!--! modal search end -->
 
-    <!--! account start  -->
-    <section class="account-page">
+    <!--! single product start  -->
+    <section class="single-product">
       <div class="container">
-        <div class="account-wrapper">
-          <div class="acoount-column">
-            <h2>Login</h2>
-            <form>
-              <div>
-                <label>
-                  <span
-                    >Username or email address
-                    <span class="required">*</span></span
-                  >
-                  <input type="email" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  <span>Password <span class="required">*</span></span>
-                  <input type="password" />
-                </label>
-              </div>
-              <p class="remember">
-                <label>
-                  <input type="checkbox" />
-                  <span>Remember me </span>
-                </label>
-                <button class="btn btn-sm">Login</button>
-              </p>
-              <a href="#" class="form-link"> Forget your password? </a>
-            </form>
+        <div class="single-product-wrapper">
+          <!-- breascrumb start -->
+          <div class="single-topbar">
+            <nav class="breadcrumb">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li>Basic Colored Sweatpants With Elastic Hems</li>
+              </ul>
+            </nav>
           </div>
-          <div class="acoount-column">
-            <h2>Register</h2>
-            <form>
-              <div>
-                <label>
-                  <span>Username <span class="required">*</span></span>
-                  <input type="text" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  <span>Email address <span class="required">*</span></span>
-                  <input type="email" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  <span>Password <span class="required">*</span></span>
-                  <input type="password" />
-                </label>
-              </div>
-              <div class="privacy-policy-text">
-                <p class="remember">
-                  Your personal data will be used to support your experience
-                  throughout this website, to manage access to your account, and
-                  for other purposes described in our
-                  <a href="#"> privacy policy.</a>
-                  <button class="btn btn-sm">Register</button>
-                </p>
-              </div>
-            </form>
-          </div>
+          <!-- breascrumb end -->
         </div>
       </div>
     </section>
-    <!--! account end  -->
+    <!--! single product end  -->
 
     <!--! policy start  -->
     <section class="policy">
