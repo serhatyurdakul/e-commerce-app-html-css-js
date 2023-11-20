@@ -133,6 +133,7 @@ header .menu-dropdown-wrapper {
   opacity: 0;
   transition: 0.2s ease all;
   z-index: 2;
+  display: none !important; /**  *//**  *//**  *//**  */
 }
 
 header .menu-dropdown-content {
