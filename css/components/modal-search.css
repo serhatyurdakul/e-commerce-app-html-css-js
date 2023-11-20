@@ -9,6 +9,9 @@
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  z-index: 999;
+  opacity: 0;
+  transition: 0.3s ease all;
 }
 
 .modal-search::after {
@@ -132,6 +135,7 @@
 }
 .modal-search .bi-x-circle {
   position: absolute;
+  cursor: pointer;
   top: 15px;
   right: 15px;
 }
