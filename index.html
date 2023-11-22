@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/main.css" />
+    <!--! Glide.js CSS CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+    />
     <!--! Bootstrap icons CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <script defer src="./js/index.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script defer src="./js/glide.js"></script>
     <title>E-Commerce App</title>
   </head>
 
@@ -351,269 +358,280 @@
           <h2>Featured Products</h2>
           <p>Summer Collection New Modern Design</p>
         </div>
-        <div class="product-wrapper">
-          <ul class="product-list">
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product1/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product1/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
+
+        <div class="product-wrapper product-carousel">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="product-list glide__slides">
+              <li class="product-item glide__slide">
+                <div class="product-image">
                   <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
+                    <img
+                      src="./img/products/product1/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product1/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product2/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product2/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <i class="bi bi-basket-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-eye-fill"></i>
                     </a>
-                  </li>
-                  <li>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-share-fill"></i>
                     </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
+                  </div>
                 </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
+              </li>
+              <li class="product-item glide__slide">
+                <div class="product-image">
                   <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product3/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product3/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
+                    <img
+                      src="./img/products/product2/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product2/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product4/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product4/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <id class="bi bi-basket-fill"></id>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-eye-fill"></i>
                     </a>
-                  </li>
-                  <li>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-share-fill"></i>
                     </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
+                  </div>
                 </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
+              </li>
+              <li class="product-item glide__slide">
+                <div class="product-image">
                   <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
+                    <img
+                      src="./img/products/product3/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product3/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
                   </a>
                 </div>
-              </div>
-            </li>
-          </ul>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <i class="bi bi-basket-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
+                    <a href="#">
+                      <i class="bi bi-eye-fill"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bi bi-share-fill"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item glide__slide">
+                <div class="product-image">
+                  <a href="#">
+                    <img
+                      src="./img/products/product4/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product4/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
+                  </a>
+                </div>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <i class="bi bi-basket-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
+                    <a href="#">
+                      <i class="bi bi-eye-fill"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bi bi-share-fill"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -689,269 +707,279 @@
           <h2>New Arrivals</h2>
           <p>Summer Collection New Modern Design</p>
         </div>
-        <div class="product-wrapper">
-          <ul class="product-list">
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product1/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product1/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
+        <div class="product-wrapper product-carousel2">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="product-list glide__slides">
+              <li class="product-item glide__slide">
+                <div class="product-image">
                   <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
+                    <img
+                      src="./img/products/product1/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product1/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product2/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product2/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <i class="bi bi-basket-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-eye-fill"></i>
                     </a>
-                  </li>
-                  <li>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-share-fill"></i>
                     </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
+                  </div>
                 </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
+              </li>
+              <li class="product-item glide__slide">
+                <div class="product-image">
                   <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product3/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product3/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
-                </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
-                  <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
+                    <img
+                      src="./img/products/product2/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product2/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
                   </a>
                 </div>
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-image">
-                <a href="#">
-                  <img
-                    src="./img/products/product4/1.png"
-                    alt="product image"
-                    class="img1"
-                  />
-                  <img
-                    src="./img/products/product4/2.png"
-                    alt="product image"
-                    class="img2"
-                  />
-                </a>
-              </div>
-              <div class="product-info">
-                <a href="#" class="product-title">Analouge Resin Strap</a>
-                <ul class="product-star">
-                  <li>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <id class="bi bi-basket-fill"></id>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-eye-fill"></i>
                     </a>
-                  </li>
-                  <li>
                     <a href="#">
-                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-share-fill"></i>
                     </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="bi bi-star-half"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="product-prices">
-                  <strong class="new-price">$108.00</strong>
-                  <span class="old-price">$165.00</span>
+                  </div>
                 </div>
-                <span class="product-discount">-17%</span>
-                <div class="product-links">
-                  <button>
-                    <i class="bi bi-basket-fill"></i>
-                  </button>
-                  <button>
-                    <i class="bi bi-heart-fill"></i>
-                  </button>
+              </li>
+              <li class="product-item glide__slide">
+                <div class="product-image">
                   <a href="#">
-                    <i class="bi bi-eye-fill"></i>
-                  </a>
-                  <a href="#">
-                    <i class="bi bi-share-fill"></i>
+                    <img
+                      src="./img/products/product3/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product3/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
                   </a>
                 </div>
-              </div>
-            </li>
-          </ul>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <i class="bi bi-basket-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
+                    <a href="#">
+                      <i class="bi bi-eye-fill"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bi bi-share-fill"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="product-item glide__slide">
+                <div class="product-image">
+                  <a href="#">
+                    <img
+                      src="./img/products/product4/1.png"
+                      alt="product image"
+                      class="img1"
+                    />
+                    <img
+                      src="./img/products/product4/2.png"
+                      alt="product image"
+                      class="img2"
+                    />
+                  </a>
+                </div>
+                <div class="product-info">
+                  <a href="#" class="product-title">Analouge Resin Strap</a>
+                  <ul class="product-star">
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-fill"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="bi bi-star-half"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="product-prices">
+                    <strong class="new-price">$108.00</strong>
+                    <span class="old-price">$165.00</span>
+                  </div>
+                  <span class="product-discount">-17%</span>
+                  <div class="product-links">
+                    <button>
+                      <i class="bi bi-basket-fill"></i>
+                    </button>
+                    <button>
+                      <i class="bi bi-heart-fill"></i>
+                    </button>
+                    <a href="#">
+                      <i class="bi bi-eye-fill"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bi bi-share-fill"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
