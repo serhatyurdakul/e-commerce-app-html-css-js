@@ -96,3 +96,18 @@ function showSlides(n) {
 }
 
 //! Slider End
+
+//! Add products to local storage
+
+async function getData() {
+  fetch("../js/data.json")
+    .then((response) => response.json())
+    .then((jsonData) => {
+      localStorage.setItem("postData", JSON.stringify(jsonData));
+    })
+    .catch((error) => {
+      console.error("Hata oluştu:", error);
+    });
+}
+
+getData();
