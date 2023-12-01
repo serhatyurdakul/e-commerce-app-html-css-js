@@ -1,7 +1,37 @@
 import { product1, product2 } from "./glide.js";
 
+let products = [];
+let cart = [];
+
+cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
+
+function addToCart() {
+  const buttons = document.getElementsByClassName("add-to-cart");
+  const cartItems = document.querySelector(".header-cart-count");
+
+  Array.from(buttons).forEach((button) => {
+    const inCart = cart.find((item) => item.id === Number(button.dataset.id));
+    if (inCart) {
+      button.setAttribute("disabled", "disabled");
+    } else {
+      button.addEventListener("click", (e) => {
+        const id = e.target.dataset.id;
+        const findProduct = products.find(
+          (product) => product.id === Number(id)
+        );
+        cart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cart", JSON.stringify(cart));
+        button.setAttribute("disabled", "disabled");
+        cartItems.innerHTML = cart.length;
+      });
+    }
+  });
+}
+
 function productsFunc() {
-  const products = localStorage.getItem("products")
+  products = localStorage.getItem("products")
     ? JSON.parse(localStorage.getItem("products"))
     : [];
   const productsContainer = document.getElementById("product-list");
@@ -9,7 +39,8 @@ function productsFunc() {
 
   let results = "";
   products.forEach((item) => {
-    results += `<li class="product-item glide__slide">
+    results += `
+    <li class="product-item glide__slide">
     <div class="product-image">
       <a href="#">
         <img src="${item.img.singleImage}" alt="" class="img1" />
@@ -17,7 +48,7 @@ function productsFunc() {
       </a>
     </div>
     <div class="product-info">
-      <a href="$" class="product-title">${item.name}</a>
+      <a href="#" class="product-title">${item.name}</a>
       <ul class="product-star">
         <li>
           <i class="bi bi-star-fill"></i>
@@ -41,13 +72,13 @@ function productsFunc() {
       </div>
       <span class="product-discount">-${item.discount}%</span>
       <div class="product-links">
-        <button>
-          <i class="bi bi-basket-fill"></i>
+        <button class="add-to-cart" data-id=${item.id}  >
+          <i class="bi bi-basket-fill" ></i>
         </button>
         <button>
           <i class="bi bi-heart-fill"></i>
         </button>
-        <a href="#">
+        <a href="#" class="product-link" >
           <i class="bi bi-eye-fill"></i>
         </a>
         <a href="#">
@@ -59,9 +90,10 @@ function productsFunc() {
  `;
     productsContainer.innerHTML = results;
     productsContainer2.innerHTML = results;
+    addToCart();
   });
   product1();
   product2();
 }
 
-export default productsFunc();
+export default productsFunc;

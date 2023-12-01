@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/main.js" type="module"></script>
     <!--! Bootstrap icons CDN -->
     <link
       rel="stylesheet"
@@ -27,10 +28,10 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="btn-menu"></i>
             </div>
             <div class="header-left"><a href="#" class="logo">LOGO</a></div>
-            <div class="header-center">
+            <div class="header-center" id="sidebar">
               <nav class="navigation">
                 <ul class="menu-list">
                   <li class="menu-list-item">
@@ -125,7 +126,7 @@
                   </li>
                 </ul>
               </nav>
-              <i class="bi bi-x-circle"></i>
+              <i class="bi bi-x-circle" id="close-sidebar"></i>
             </div>
 
             <div class="header-right">
@@ -195,7 +196,7 @@
             </a>
           </div>
         </div>
-        <i class="bi bi-x-circle"></i>
+        <i class="bi bi-x-circle" id="close-search"></i>
       </div>
     </div>
     <!--! modal search end -->
