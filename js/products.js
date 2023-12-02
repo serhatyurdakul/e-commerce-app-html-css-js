@@ -1,9 +1,8 @@
 import { product1, product2 } from "./glide.js";
 
 let products = [];
-let cart = [];
 
-cart = localStorage.getItem("cart")
+let cart = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart"))
   : [];
 
@@ -88,8 +87,8 @@ function productsFunc() {
     </div>
   </li>
  `;
-    productsContainer.innerHTML = results;
-    productsContainer2.innerHTML = results;
+    productsContainer ? (productsContainer.innerHTML = results) : "";
+    productsContainer2 ? (productsContainer2.innerHTML = results) : "";
     addToCart();
   });
   product1();

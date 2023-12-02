@@ -22,7 +22,5 @@ import productsFunc from "./products.js";
 //! Add cartItems to localStorage start
 const cartItems = document.querySelector(".header-cart-count");
 
-cartItems.innerHTML = localStorage.getItem("cart")
-  ? JSON.parse(localStorage.getItem("cart")).length
-  : "0";
+cartItems.innerHTML = localStorage.getItem("cart") ? (JSON.parse(localStorage.getItem("cart"))).length: "0";
 //! Add cartItems to localStorage end

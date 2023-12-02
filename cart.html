@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <script defer src="./js/main.js" type="module"></script>
+    <script defer src="./js/cart.js" type="module"></script>
     <!--! Bootstrap icons CDN -->
     <link
       rel="stylesheet"
@@ -224,30 +225,7 @@
                   <th class="product-quantity">Quantity</th>
                   <th class="product-subtotal">Subtotal</th>
                 </thead>
-                <tbody class="cart-wrapper">
-                  <tr class="cart-item">
-                    <td></td>
-                    <td class="cart-image">
-                      <img src="./img/products/product1/1.png" alt="" />
-                      <i class="bi bi-x delete-cart"></i>
-                    </td>
-                    <td>Ridley High Waist</td>
-                    <td>$100.00</td>
-                    <td class="product-quantity">1</td>
-                    <td class="product-subtotal">$100.00</td>
-                  </tr>
-                  <tr class="cart-item">
-                    <td></td>
-                    <td class="cart-image">
-                      <img src="./img/products/product2/1.png" alt="" />
-                      <i class="bi bi-x delete-cart"></i>
-                    </td>
-                    <td>Ridley High Waist</td>
-                    <td>$100.00</td>
-                    <td class="product-quantity">1</td>
-                    <td class="product-subtotal">$100.00</td>
-                  </tr>
-                </tbody>
+                <tbody class="cart-wrapper"></tbody>
               </table>
               <div class="actions-wrapper">
                 <div class="coupon">
@@ -280,7 +258,7 @@
                         <li>
                           <label
                             >Fast Cargo: $15.00
-                            <input type="checkbox" />
+                            <input type="checkbox" id="fast-cargo" />
                           </label>
                         </li>
                         <li><a href="#">Change Address</a></li>
@@ -289,7 +267,7 @@
                   </tr>
                   <tr>
                     <th>Total</th>
-                    <td><strong>$148.00</strong></td>
+                    <td><strong id="cart-total">$148.00</strong></td>
                   </tr>
                 </tbody>
               </table>
