@@ -36,3 +36,11 @@
   text-align: start;
   font-size: 14px;
 }
+
+.single-tabs .content{
+  display: none;
+}
+
+.single-tabs .content.active{
+  display: block;
+}

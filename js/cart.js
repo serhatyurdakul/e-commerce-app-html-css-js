@@ -41,7 +41,6 @@ function removeCartItem() {
       saveCartValues();
     });
   });
-
 }
 
 function saveCartValues() {
@@ -63,10 +62,7 @@ function saveCartValues() {
     } else {
       cartTotal.innerHTML = `$${itemsTotal.toFixed(2)}`;
     }
-    console.log(e.target.checked);
   });
-
-  console.log("itemsTotal: ", itemsTotal);
 }
 
 saveCartValues();
