@@ -385,7 +385,7 @@
               </li>
             </ul>
             <div class="tab-panel">
-              <div class="tab-panel-descriptions content active" id="desc">
+              <div class="tab-panel-descriptions content" id="desc">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
                   vel commodi minima fugiat alias, dolorum suscipit tenetur
@@ -426,7 +426,7 @@
                   </tbody>
                 </table>
               </div>
-              <div class="tab-panel-reviews content" id="reviews">
+              <div class="tab-panel-reviews content active" id="reviews">
                 <h3>
                   2 reviews for Basic Colored Sweatpants With Elastic Hems
                 </h3>
@@ -496,25 +496,26 @@
                         <span class="required">*</span>
                       </label>
                       <div class="stars">
-                        <a href="#">
+                        <a href="#" class="star">
                           <i class="bi bi-star-fill"></i>
                         </a>
-                        <a href="#">
-                          <i class="bi bi-star-fill"></i>
-                          <i class="bi bi-star-fill"></i>
-                        </a>
-                        <a href="#">
-                          <i class="bi bi-star-fill"></i>
+                        <a href="#" class="star">
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </a>
-                        <a href="#">
-                          <i class="bi bi-star-fill"></i>
+                        <a href="#" class="star">
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                         </a>
-                        <a href="#">
+                        <a href="#" class="star">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </a>
+                        <a href="#" class="star">
+                          <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
                           <i class="bi bi-star-fill"></i>
@@ -526,13 +527,17 @@
                       <label for="comment">
                         Your review <span class="required">*</span>
                       </label>
-                      <textarea id="comment" cols="50" rows="10"></textarea>
+                      <textarea
+                        id="comment-text"
+                        cols="50"
+                        rows="10"
+                      ></textarea>
                     </div>
                     <div class="comment-form-author form-comment">
                       <label for="name">
                         Name <span class="required">*</span>
                       </label>
-                      <input type="text" id="name" />
+                      <input type="text" id="comment-name" />
                     </div>
                     <div class="comment-form-email form-comment">
                       <label for="email">

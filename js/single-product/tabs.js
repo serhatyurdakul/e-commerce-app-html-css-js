@@ -1,9 +1,9 @@
 function tabsFunc() {
   const btnTab = document.querySelectorAll(".tab-button");
   const contentDOM = document.querySelectorAll(".content");
-  const tabsWrapperDOM = document.querySelector(".single-tabs");
+  const tabsButtons = document.querySelector(".tab-list");
 
-  tabsWrapperDOM.addEventListener("click", (e) => {
+  tabsButtons.addEventListener("click", (e) => {
     e.preventDefault();
     const id = e.target.dataset.id;
     if (id) {
@@ -12,8 +12,8 @@ function tabsFunc() {
       });
       e.target.classList.add("active");
       contentDOM.forEach((content) => content.classList.remove("active"));
-      const element = document.getElementById(id)
-      element.classList.add("active")
+      const element = document.getElementById(id);
+      element.classList.add("active");
     }
   });
 
